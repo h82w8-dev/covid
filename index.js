@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api')
-const covidService = require('covid')
-const formatCountryMsg = require('country')
+const covidService = require('./covid')
+const formatCountryMsg = require('./country')
 
 const TOKEN = process.env.TOKEN
 
