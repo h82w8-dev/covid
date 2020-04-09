@@ -2,9 +2,8 @@ const covidService = require('./covid')
 const formatCountryMsg = require('./country')
 const Telegraf = require('telegraf');
 
-const bot = new Telegraf(TOKEN);
-
 const TOKEN = process.env.TOKEN
+const bot = new Telegraf(TOKEN);
 
 bot.on('message', msg => {
     bot.sendMessage(msg.chat.id, `Hello dude! "welcome to bot, ${msg.from.first_name}"`)
