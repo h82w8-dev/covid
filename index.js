@@ -1,10 +1,10 @@
-const TelegramBot = require('node-telegram-bot-api')
 const covidService = require('./covid')
 const formatCountryMsg = require('./country')
+const Telegraf = require('telegraf');
+
+const bot = new Telegraf(TOKEN);
 
 const TOKEN = process.env.TOKEN
-
-const bot = new TelegramBot(TOKEN, {polling: true})
 
 bot.on('message', msg => {
     bot.sendMessage(msg.chat.id, `Hello dude! "welcome to bot, ${msg.from.first_name}"`)
