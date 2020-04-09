@@ -5,10 +5,6 @@ const Telegraf = require('telegraf');
 const TOKEN = process.env.TOKEN
 const bot = new Telegraf(TOKEN);
 
-bot.on('message', msg => {
-    bot.sendMessage(msg.chat.id, `Hello dude! "welcome to bot, ${msg.from.first_name}"`)
-})
-
 bot.startPolling(ctx => ctx.reply(`
 Welcome to Covid-19 bot
 You need to send a name of country where you need get COVID data
