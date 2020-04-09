@@ -10,6 +10,13 @@ Welcome to Covid-19 bot
 You need to send a name of country where you need get COVID data
 `));
 
+bot.help(ctx => ctx.reply(`
+Example:
+Russia
+Ukraine
+China
+`));
+
 bot.hears(/.*/, async ctx => {
     const {data} = await covidService.getByCountry(ctx.message.text);
     
