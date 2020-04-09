@@ -6,19 +6,19 @@ const TOKEN = process.env.TOKEN
 const bot = new Telegraf(TOKEN);
 
 
-// commands
-// start, help
-bot.start(ctx=>ctx.reply(`
-Welcome to COVID BOT!
-You need to send a name of country where you need to get COVID data
+bot.startPolling(ctx => ctx.reply(`
+Welcome to Covid-19 bot
+You need to send a name of country where you need get COVID data
 `));
-bot.help(ctx=>ctx.reply(`
+
+bot.help(ctx => ctx.reply(`
 Example:
-Ukraine
 Russia
+Ukraine
 China
-`
-));
+`));
+
+
 // handlers
 bot.hears(/.*/, async ctx => {
   const {data} = await covidService.getByCountry(ctx.message.text);
