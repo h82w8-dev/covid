@@ -16,6 +16,7 @@
     "axios": "^0.19.2",
     "country-emoji": "^1.5.0",
     "node-telegram-bot-api": "^0.40.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "telegraf": "^3.37.0"
   }
 }
