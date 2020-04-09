@@ -28,3 +28,9 @@ bot.hears(/.*/, async ctx => {
 
   return ctx.replyWithMarkdown(formatCountryMsg(data.response[0]))
 });
+
+bot.launch()
+.then(res=>{
+  const date = new Date();
+  console.log(`Bot launched at ${date}`);
+}).catch(err=>console.log(err));
