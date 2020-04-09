@@ -8,7 +8,7 @@ const bot = new Telegraf(TOKEN);
 
 // commands
 // start, help
-bot.start(ctx => ctx.reply(`
+bot.start(ctx=>ctx.reply(`
 Welcome to COVID BOT!
 You need to send a name of country where you need to get COVID data
 `));
