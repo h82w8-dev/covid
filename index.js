@@ -29,4 +29,6 @@ bot.hears(/.*/, async ctx => {
   return ctx.replyWithMarkdown(formatCountryMsg(data.response[0]))
 });
 
+bot.command('hipster', Telegraf.reply('λ'))
+
 bot.launch()
