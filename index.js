@@ -17,7 +17,6 @@ Ukraine
 China
 `));
 
-
 // handlers
 bot.hears(/.*/, async ctx => {
   const {data} = await covidService.getByCountry(ctx.message.text);

@@ -1,22 +1,17 @@
 {
-  "name": "new-app",
-  "version": "1.0.0",
+  "name": "covid-master",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": "13.12.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
     "country-emoji": "^1.5.0",
-    "node-telegram-bot-api": "^0.40.0",
-    "require": "^2.4.20",
+    "request": "^2.88.2",
     "telegraf": "^3.37.0"
   }
 }
